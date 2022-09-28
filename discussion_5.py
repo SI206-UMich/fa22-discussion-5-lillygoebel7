@@ -89,11 +89,11 @@ class TestAllMethods(unittest.TestCase):
 		self.myWarehouse.add_item(self.item1)
 		self.assertEqual(self.myWarehouse.items, [self.item1], 'Tested add_item(item1)')
 
-		#self.myWarehouse.add_item(self.item2)
-		#self.assertEqual(self.myWarehouse.items, [self.item1, self.item2], 'Tested add_item(item2)')
+		self.myWarehouse.add_item(self.item2)
+		self.assertEqual(self.myWarehouse.items, [self.item1, self.item2], 'Tested add_item(item2)')
 
-		#self.myWarehouse.add_item(self.item3)
-		#self.assertEqual(self.myWarehouse.items, [self.item1, self.item2, self.item3], 'Tested add_item(item3)')
+		self.myWarehouse.add_item(self.item3)
+		self.assertEqual(self.myWarehouse.items, [self.item1, self.item2, self.item3], 'Tested add_item(item3)')
 
 		#self.myWarehouse.add_item(self.item4)
 		#self.assertEqual(self.myWarehouse.items, [self.item1, self.item2, self.item3, self.item4], 'Tested add_item(item4)')
